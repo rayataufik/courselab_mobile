@@ -69,6 +69,7 @@ class _DetailCategoryPageState extends State<DetailCategoryPage> {
             : errorMessage.isNotEmpty
                 ? Center(child: Text(errorMessage))
                 : SingleChildScrollView(
+                    physics: const AlwaysScrollableScrollPhysics(),
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Column(

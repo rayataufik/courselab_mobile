@@ -1,7 +1,7 @@
 import 'package:courselab_mobile/screens/detail_category.dart';
 import 'package:flutter/material.dart';
 import 'package:courselab_mobile/widgets/category_tile.dart';
-import 'package:courselab_mobile/models/category_model.dart'; // Correct import for the detail page
+import 'package:courselab_mobile/models/category_model.dart';
 
 class CategoriesList extends StatelessWidget {
   final List<CategoryModel> categories;
@@ -34,9 +34,7 @@ class CategoriesList extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => DetailCategoryPage(
-            categoryId:
-                category.id), // Assuming DetailCategoryPage takes a categoryId
+        builder: (context) => DetailCategoryPage(categoryId: category.id),
       ),
     );
   }

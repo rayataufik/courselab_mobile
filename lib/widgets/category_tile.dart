@@ -5,7 +5,7 @@ import 'package:courselab_mobile/utils/utils.dart';
 
 class CategoryTile extends StatelessWidget {
   final CategoryModel category;
-  final VoidCallback? onTap; // Optional callback for handling taps
+  final VoidCallback? onTap;
 
   const CategoryTile({Key? key, required this.category, this.onTap})
       : super(key: key);
@@ -13,7 +13,7 @@ class CategoryTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onTap, // Use the passed callback or define default behavior
+      onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(

@@ -4,7 +4,6 @@ import 'package:courselab_mobile/widgets/categories_list.dart';
 import 'package:courselab_mobile/widgets/search_bar.dart' as custom;
 import 'package:courselab_mobile/widgets/banner.dart';
 import 'package:courselab_mobile/widgets/app_bar.dart';
-import 'package:courselab_mobile/widgets/bottom_navigation_bar.dart';
 import 'package:courselab_mobile/services/api_service.dart';
 import 'package:courselab_mobile/models/category_model.dart';
 
@@ -49,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
       statusBarIconBrightness: Brightness.dark,
     ));
     return Scaffold(
+      backgroundColor: Colors.white, // Set the background color to white
       body: SafeArea(
         child: isLoading
             ? const Center(child: CircularProgressIndicator())
@@ -74,7 +74,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
       ),
-      bottomNavigationBar: const CustomBottomNavigationBar(),
     );
   }
 }
